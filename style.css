@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 body {
     font-family: sans-serif;
     color: #F9FAF8;
@@ -10,7 +11,7 @@ button {
     border-radius: 8px;
     border-color: #F9FAF8;
     border-style: solid;
-    padding: 8px 16px;
+    padding: 8px 24px;
     
 }
 ul {
@@ -46,10 +47,10 @@ a {
     background-color: #1F2937;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-around;
-    padding: 16px;
+    justify-content: space-between;
+    padding: 48px;
+    gap: 32px;
 }
-
 .hero h1 {
     font-size: 48px;
     color: #F9FAF8;
@@ -60,9 +61,9 @@ a {
     font-size: 18px;
     color: #E5E7EB;
 }
-.placeholder {
-    color:#F9FAF8;
-    background-color: grey;
+.hero .right {
+    color:#1F2937;
+    background-color: #E5E7EB;
     border-radius: 8px;
     height: 200px;
     width: 200px;
@@ -70,6 +71,15 @@ a {
     align-items: center;
     justify-content: center;
     padding: 8px;
+    flex: 1.24;
+}
+
+.hero .left {
+    flex: 1;
+}
+
+.hero button {
+    border: none;
 }
 .information {
     background-color: #F9FAF8;
@@ -87,7 +97,7 @@ a {
     background-color: #F9FAF8;
     display: flex;
     flex-flow: row nowrap;
-    gap: 16px;
+    gap: 32px;
     padding: 16px;
     justify-content: center;
     align-items: center;
@@ -96,15 +106,15 @@ a {
 .deck .card {
     flex-grow: 0;
     flex-shrink: 0;
-    width: 200px;
-    height: 200px;
     color: #1F2937;
     text-align: center;
+    width: 175px;
+    height: 250px;
 }
 
  .deck .card img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: #3882F6 solid 4px;
     border-radius: 8px;
 }
@@ -113,15 +123,17 @@ a {
     background-color: #E5E7EB;
     font-size: 36px;
     color: #1F2937;
-    font-weight: 300;
     font-style: italic;
     margin: 0px;
     display: flex;
     flex-direction: column;
+    padding: 48px;
 
 }
 .testimonial figcaption{
     align-self: flex-end;
+    font-size: 26px;
+    font-weight: 300;
 }
 
 
@@ -141,10 +153,23 @@ a {
     padding: 0px;
     height: 48px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 16px;
     background-color: #1F2937 ;
     color: white;
     display: flex;
 }
 
+.footer .Left {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo {
+    font-family: Besley, serif;
+    font-weight: 900;
+    font-style: italic;
+}
