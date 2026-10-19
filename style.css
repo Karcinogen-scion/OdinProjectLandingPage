@@ -5,15 +5,20 @@ body {
     padding: 0px;
     margin: 0px;
 }
+button {
+    font-size: 36px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 8px;
+}
 
 .navbar {
-    background-color: lightblue ;
+    background-color: #1F2937 ;
     color: white;
     display: flex;
     margin: 0;
     padding: 8px;
     align-items: center;
-    gap: 8px;
 }
 ul {
     list-style: none;
@@ -22,6 +27,7 @@ ul {
 }
 .RightLinks {
     margin-left: auto;
+    gap: 16px
 }
 
 .hero {
@@ -31,4 +37,29 @@ ul {
 .navbar .LeftLinks li {
     font-size: 24px;
     color: #F9FAF8;
+}
+
+.testimonial {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.deck {
+    background-color: #F9FAF8;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.deck .card {
+    border: #3882F6 solid 4px;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
 }
